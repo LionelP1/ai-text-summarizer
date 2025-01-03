@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Summarizer</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/4be83870fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <div class="left-icons">
+            <a href="index.html" class="home-link">
+                <i class="fa-solid fa-house fa-xl" style="color: #000000;"></i>
+            </a>
+            <a href= "https://github.com/lpei1900/Word_Counter" class="github-link">
+                <i class="fa-brands fa-github fa-xl" style="color: #000000;"></i>
+            </a>
+        </div>
+        <h1 class="title">AI Text Summarizer</h1>
+    </header>
+
     <% if (error) { %>
         <div class="error-message">
             <p><%= error %></p>
         </div>
     <% } %>
+
     <div class="container">
         <div class="input-section">
-            <h1>AI Text Summarizer</h1>
             <form action="/api/summarize" method="POST">
                 <label for="text">Enter Text to Summarize:</label>
                 <textarea id="text" name="text" rows="15" cols="40" placeholder="Paste your text here..."></textarea>
