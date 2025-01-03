@@ -9,7 +9,7 @@ const summarizerController = async (req, res) => {
 
     try {
         const summary = await generateSummary(text);
-        console.log(summary);
+        res.render('index', { summary });
 
     } catch (error) {
         console.error('Error summarizing text:', error.message);

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summarizer</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Text Summarizer</h1>
+        <form action="/api/summarize" method="POST">
+            <label for="text">Enter Text to Summarize:</label>
+            <textarea id="text" name="text" rows="6" cols="50" placeholder="Paste your text here..."></textarea>
+            <br>
+            <button type="submit">Summarize</button>
+        </form>
+
+        <% if (summary) { %>
+        <div class="result">
+            <h2>Summary:</h2>
+            <p><%= summary %></p>
+        </div>
+        <% } %>
+    </div>
+</body>
+</html>

@@ -12,6 +12,11 @@ app.use(express.urlencoded({ extended: false }));
 
 const summarizeRoutes = require('./routes/summarizeRoutes');
 
+app.get('/', (req, res) => {
+    res.render('index', { summary: null });
+});
+
+
 app.use('/api/summarize', summarizeRoutes);
 
 const port = process.env.PORT || 3000;
