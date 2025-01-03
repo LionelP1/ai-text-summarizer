@@ -6,21 +6,30 @@
     <title>AI Summarizer</title>
 </head>
 <body>
-    <div class="container">
-        <h1>AI Text Summarizer</h1>
-        <form action="/api/summarize" method="POST">
-            <label for="text">Enter Text to Summarize:</label>
-            <textarea id="text" name="text" rows="6" cols="50" placeholder="Paste your text here..."></textarea>
-            <br>
-            <button type="submit">Summarize</button>
-        </form>
-
-        <% if (summary) { %>
-        <div class="result">
-            <h2>Summary:</h2>
-            <p><%= summary %></p>
+    <% if (error) { %>
+        <div class="error-message">
+            <p><%= error %></p>
         </div>
-        <% } %>
+    <% } %>
+    <div class="container">
+        <div class="input-section">
+            <h1>AI Text Summarizer</h1>
+            <form action="/api/summarize" method="POST">
+                <label for="text">Enter Text to Summarize:</label>
+                <textarea id="text" name="text" rows="15" cols="40" placeholder="Paste your text here..."></textarea>
+                <br>
+                <button type="submit">Summarize</button>
+            </form>
+        </div>
+        <div class="output-section">
+            <% if (summary) { %>
+                <h2>Summary:</h2>
+                <p><%= summary %></p>
+            <% } else { %>
+                <h2>Your summary will appear here</h2>
+            <% } %>
+        </div>
     </div>
 </body>
 </html>
+
