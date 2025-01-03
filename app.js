@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 const summarizeRoutes = require('./routes/summarizeRoutes');
 
 app.get('/', (req, res) => {
-    res.render('index', { summary: null });
+    res.render('index', { summary: null, error: null });
 });
 
 
