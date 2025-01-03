@@ -1,4 +1,4 @@
-const { generateSummary } = require('../services/generateContent');
+const { generateSummary } = require('../services/generateSummary');
 
 const summarizerController = async (req, res) => {
     const { text } = req.body;
