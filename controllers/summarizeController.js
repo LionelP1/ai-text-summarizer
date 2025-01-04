@@ -4,7 +4,7 @@ const summarizerController = async (req, res) => {
     const { text } = req.body;
 
     if (!text || typeof text !== 'string' || text.trim() === '') {
-        return res.render('index', { summary: null, error: 'Invalid input: No text provided or input is empty.' });
+        return res.render('index', { summary: null, error: 'No text provided.' });
     }
     
     try {
