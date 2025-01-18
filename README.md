@@ -4,7 +4,7 @@
 The AI Text Summarizer is a web application that uses **Gemini AI** to produce concise, coherent summaries of lengthy text. Simply paste your article, research paper, or any block of text, and the app will distill it into the key insights—no need to read through everything. The application is built using **EJS** for server-side rendering, providing a simple yet effective user interface.
 
 ## Live Demo
-[AI Text Summarizer Live Demo]([https://your-ai-text-summarizer-url.com](https://ai-text-summarizer-w9xe.onrender.com))
+[AI Text Summarizer Live Demo](https://ai-text-summarizer-w9xe.onrender.com)
 
 *Note: The project will take 1 minute to load.*
 
