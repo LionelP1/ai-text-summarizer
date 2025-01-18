@@ -6,7 +6,7 @@ The AI Text Summarizer is a web application that uses **Gemini AI** to produce c
 ## Live Demo
 [AI Text Summarizer Live Demo]([https://your-ai-text-summarizer-url.com](https://ai-text-summarizer-w9xe.onrender.com))
 
-> *Note: The project will take 1 minute to load.*
+*Note: The project will take 1 minute to load.*
 
 ## Features
 - **Gemini AI Summaries:**
